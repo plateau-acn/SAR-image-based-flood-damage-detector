@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>操作マニュアル </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="操作マニュアル ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="操作マニュアル">操作マニュアル</h1>
+
+<h1 id="1-本書について">1 本書について</h1>
+<p>本書では、SAR衛星解析による洪水被害の推定システム（以下「本システム」という。）の操作手順について記載しています。</p>
+<h1 id="2-使い方">2 使い方</h1>
+<h2 id="2-1-google-drive内に保存されたファイルの起動">2-1 Google Drive内に保存されたファイルの起動</h2>
+<p>本システムの実行ファイルである拡張子が「.ipynb」のファイルをGoogle Drive内でダブルクリックすると、Google Colaboratoryが起動します。
+「マイドライブ」 -&gt; 「SAR-image-based-flood-damage-detector」 -&gt; 「PLATEAU-FloodSAR」に本システムの実行ファイルが展開されています。
+以下が実行ファイルの一覧です。欧州宇宙機関が運用するSentinel-1から取得したSAR衛星画像を使用した解析を行う場合、メインブランチを順に実行する。</p>
+<table>
+<thead>
+<tr>
+<th>ファイル名</th>
+<th>内容</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0_PrepareProject.ipynb</td>
+<td>プロジェクトの初期・3D都市モデル（CityGML）の読み込み</td>
+<td>メインブランチ</td>
+</tr>
+<tr>
+<td>1_EstimateSAR-FloodPrbDiff.ipynb</td>
+<td>SARデータの読み込み・SARデータによる浸水確率ラスターデータの推定</td>
+<td>メインブランチ</td>
+</tr>
+<tr>
+<td>2_GeneratePointGroup.ipynb</td>
+<td>浸水ポイントクラウドデータの生成</td>
+<td>メインブランチ</td>
+</tr>
+<tr>
+<td>3_CalcFloodDEMRaster.ipynb</td>
+<td>浸水面の高度ラスターデータと浸水深データの生成</td>
+<td>メインブランチ</td>
+</tr>
+<tr>
+<td>4_AssessBuildings.ipynb</td>
+<td>建物への浸水深付与</td>
+<td>メインブランチ</td>
+</tr>
+<tr>
+<td>5_Upload.ipynb</td>
+<td>Re:Earth CMSへの解析結果のアップロード</td>
+<td>メインブランチ</td>
+</tr>
+<tr>
+<td>s1-s3_GIAJ_FloodArea_Raster.ipynb</td>
+<td>GIAJ GeoJSONデータを利用した解析</td>
+<td>サブブランチ</td>
+</tr>
+<tr>
+<td>s1_ALOS-2_EstimateSAR-FloodPrb.ipynb</td>
+<td>ALOS-2データを利用した解析</td>
+<td>サブブランチ</td>
+</tr>
+<tr>
+<td>s1-s2_ASNARO-2_EstimateSAR_FloodPrb.ipynb</td>
+<td>ASNARO-2データを利用した解析</td>
+<td>サブブランチ</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-2-google-colaboratoryでの実行">2-2 Google Colaboratoryでの実行</h2>
+<p>① 実行ファイル内の変数設定</p>
+<p>・各ファイル内の「設定するパラメータ」セルにある変数を設定してください。
+・メインブランチ（Sentinel-1による解析）と国土地理院の浸水エリアのGeoJSONファイルによる解析における解析上のパラメータ変数は以下の通りです。
+<img src="../resources/userMan/tutorial_006.png" alt=""></p>
+<p>② すべてのセルの実行</p>
+<p>・「ランタイム」ボタンを押下し、「すべてのセルを実行」を選択ことでファイルが実行される。
+・Google ColaboratoryによるGoogle Driveへのファイルのアクセス許可を求められるため、許可する。</p>
+<p>③ 実行の完了</p>
+<p>・すべてのセルの実行が完了したら、次の実行ファイルに進んでください。</p>
+<h2 id="2-3-各実行ファイルの解説">2-3 各実行ファイルの解説</h2>
+<h3 id="2-3-1-人工衛星観測データの解析メインブランチ">2-3-1 人工衛星観測データの解析（メインブランチ）</h3>
+<h4 id="プロジェクトの初期3d都市モデルcitygmlの読み込み0_prepareprojectipynb">⓪プロジェクトの初期・3D都市モデル（CityGML）の読み込み（0_PrepareProject.ipynb）</h4>
+<ul>
+<li>解析対象となるCityGMLと、対象エリアとなる領域の緯度・経度情報またはポリゴンデータを入力することで、CityGMLを解析して、対象エリアの建物データを生成し、日本の地理情報機関からデジタル標高モデル（DEM、5mメッシュ）を事前にダウンロードします。</li>
+</ul>
+<h4 id="sarデータの読み込みsarデータによる浸水確率ラスターデータの推定1_estimatesar-floodprbdiffipynb">①SARデータの読み込み・SARデータによる浸水確率ラスターデータの推定（1_EstimateSAR-FloodPrbDiff.ipynb）</h4>
+<ul>
+<li>対象となる洪水日を指定することでその日の人工衛星観測データを、GoogleEarthEngineからSentinel-1の人工衛星観測データを取得し、これを利用して浸水学習モデルを使用して、浸水エリアを分類します。</li>
+<li>出力は浸水確率ラスターデータであり、洪水時の人工衛星観測データとその前の人工衛星観測データの浸水確率の差を示しています。</li>
+</ul>
+<p><img src="../resources/userMan/tutorial_008.png" alt=""></p>
+<h4 id="浸水ポイントクラウドデータの生成2_generatepointgroupipynb">②浸水ポイントクラウドデータの生成（2_GeneratePointGroup.ipynb）</h4>
+<ul>
+<li>浸水確率ラスターデータで特定の閾値を超える確率の差があるピクセルを浸水に分類する。その後、ピクセルはグリッドシステムの違いを克服するために点群データを形成する多数のランダムポイントに変換される。</li>
+</ul>
+<p><img src="../resources/userMan/tutorial_009.png" alt=""></p>
+<h4 id="浸水面の高度ラスターデータと浸水深データの生成3_calcflooddemrasteripynb">③浸水面の高度ラスターデータと浸水深データの生成（3_CalcFloodDEMRaster.ipynb）</h4>
+<ul>
+<li>浸水ポイントクラウドデータから浸水面の高度ラスターデータと浸水深データを生成します。</li>
+</ul>
+<p><img src="../resources/userMan/tutorial_010.png" alt=""></p>
+<h4 id="建物への浸水深付与4_assessbuildingsipynb">④建物への浸水深付与（4_AssessBuildings.ipynb）</h4>
+<ul>
+<li>建物データと浸水面の高度ラスターデータを使用して、建物の被災データ（CSV形式）を生成します。</li>
+<li>各建物への浸水深は、DEM内の建物の位置と浸水レベルの高低差によって決定される。その後、建物は構造種別と浸水深に基づいて異なる被災カテゴリに分類され、床上浸水か床下浸水かどうかが判定される。</li>
+</ul>
+<p><img src="../resources/userMan/tutorial_011.png" alt=""></p>
+<h3 id="2-3-2-解析結果のアップロードメインブランチ">2-3-2 解析結果のアップロード（メインブランチ）</h3>
+<h4 id="reearth-cmsへのアップロード5_uploadipynb">⑤Re:Earth CMSへのアップロード（5_Upload.ipynb）</h4>
+<ul>
+<li>前項目で生成したデータを読み込み、データをRe:Earth CMSにアップロードします。</li>
+<li>ここでは、Re:Earth CMSとの認証が必要となります。</li>
+</ul>
+<h3 id="2-3-3-giaj浸水エリアのgeojsonファイルの分析サブシーケンス">2-3-3 GIAJ浸水エリアのGeoJSONファイルの分析（サブシーケンス）</h3>
+<h4 id="giaj-geojsonから浸水面の高度ラスターデータの生成s1-s3_giaj_floodarea_rasteripynb">GIAJ GeoJSONから浸水面の高度ラスターデータの生成（s1-s3_GIAJ_FloodArea_Raster.ipynb）</h4>
+<ul>
+<li>ローカルに保存されたJSONファイルで動作します。</li>
+<li>GIAJ GeoJsonから洪水面高度ラスターデータを生成します。</li>
+<li>メインステップ①〜③を代替します。</li>
+<li>このファイルを実行した後、メインステップ④で続行してください。</li>
+</ul>
+<h3 id="2-3-4-alos-2の分析サブシーケンス">2-3-4 ALOS-2の分析（サブシーケンス）</h3>
+<h4 id="alos-2の分析s1_alos-2_estimatesar-floodprbipynb">ALOS-2の分析（s1_ALOS-2_EstimateSAR-FloodPrb.ipynb）</h4>
+<ul>
+<li>ローカルに保存されたGeoTIFFファイルで動作します。ローカルのALOS-2 SARデータをGoogle Driveにアップロードし、tiff_pathの場所を指定してください。</li>
+<li>メインステップ①を代替します。</li>
+<li>このファイルを実行した後、メインステップ②で続行してください。</li>
+<li>注意: このファイルはプロトタイプであるため、対象エリアはローカルのSAR TIFFファイルに含まれている必要があります。</li>
+<li>データを見つけるヒントについてはFindSARofJapan.mdを読んでください。</li>
+</ul>
+<h3 id="2-3-5-asnaro-2の分析サブシーケンス">2-3-5 ASNARO-2の分析（サブシーケンス）</h3>
+<h4 id="asnaro-2の分析s1-s2_asnaro-2_estimatesar_floodprbipynb">ASNARO-2の分析（s1-s2_ASNARO-2_EstimateSAR_FloodPrb.ipynb）</h4>
+<ul>
+<li>ローカルに保存されたGeoTIFFファイルで動作します。</li>
+<li>メインステップ①～②を代替します。</li>
+<li>このファイルを実行した後、メインステップ③で続行してください。</li>
+</ul>
+<h1 id="3-出力データ">3 出力データ</h1>
+<p>解析で出力されるデータは以下のとおりです。</p>
+<table>
+<thead>
+<tr>
+<th>機能</th>
+<th>出力データ</th>
+<th>内容</th>
+<th>データ形式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>人工衛星観測データの解析</td>
+<td>建物被災状況</td>
+<td>入力したCityGMLの属性をパースし、解析結果の浸水深、被災カテゴリを属性として付与したデータ。</td>
+<td>CSV</td>
+</tr>
+<tr>
+<td></td>
+<td>浸水域・浸水深の画像タイル</td>
+<td>解析結果の浸水域と浸水深を画像タイル化したデータ。</td>
+<td>png</td>
+</tr>
+<tr>
+<td></td>
+<td>浸水域・浸水深の3D点群データ</td>
+<td>解析結果の浸水域と浸水深を3D点群化したデータ。</td>
+<td>3DTiles</td>
+</tr>
+<tr>
+<td></td>
+<td>被災建物のヒートマップ画像タイル</td>
+<td>木造建物に対して床上浸水、床下浸水、木造家屋総数のヒートマップを画像タイル化したデータ。</td>
+<td>png</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-1-建物被災状況">3-1 建物被災状況</h2>
+<p>建物被災状況は建築物モデルの属性に付与され、入力したCityGMLの建物IDに紐づいてCSV形式で出力されます。</p>
+<p><img src="../resources/userMan/tutorial_012.png" alt=""></p>
+<h2 id="3-2-浸水域浸水深の画像タイル">3-2 浸水域・浸水深の画像タイル</h2>
+<p>浸水域・浸水深の画像タイルはpng形式で出力されます。</p>
+<p>画像ファイルに位置情報が付与されているため、GISソフト（QGISやArcGIS等）で利用可能です。</p>
+<p><img src="../resources/userMan/tutorial_013.png" alt=""></p>
+<h2 id="3-3-浸水域浸水深の3d点群データ">3-3 浸水域・浸水深の3D点群データ</h2>
+<p>浸水域・浸水深の3D点群データは3DTilesで出力されます。</p>
+<p><img src="../resources/userMan/tutorial_014.png" alt=""></p>
+<h2 id="3-4-被災建物のヒートマップ画像タイル">3-4 被災建物のヒートマップ画像タイル</h2>
+<p>被災建物のヒートマップ画像タイルはpng形式で出力されます。</p>
+<p>色の閾値は、「4_AssessBuildings.ipynb」のXYZタイル分けされた点郡NPZファイルの生成関数において変更が可能となっています。</p>
+<p>画像ファイルに位置情報が付与されているため、GISソフト（QGISやArcGIS等）で利用可能です。</p>
+<p><img src="../resources/userMan/tutorial_015.png" alt=""></p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

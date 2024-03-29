@@ -1,5 +1,5 @@
 {
-  "source_base_path": "/Users/shogohirasawa/Downloads/SAR-image-based-flood-damage-detector-gh-pages/markdown",
+  "source_base_path": "C:/Users/naohiro.shibuya/workplace/FY23-ghpages-review/SAR-image-based-flood-damage-detector-gh-pages/markdown",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -135,10 +135,70 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_001.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_001.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_002.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_002.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_003.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_003.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_004.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_004.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_005.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_005.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "resources/userMan/tutorial_006.png",
       "output": {
         "resource": {
           "relative_path": "resources/userMan/tutorial_006.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_007.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_007.png"
         }
       },
       "version": ""
@@ -219,6 +279,146 @@
       "output": {
         "resource": {
           "relative_path": "resources/userMan/tutorial_015.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_201.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_201.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_202.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_202.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_211.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_211.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_212.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_212.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_213.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_213.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_214.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_214.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_215.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_215.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_217.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_217.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_218.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_218.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_219.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_219.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_220.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_220.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_230.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_230.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_240.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_240.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/userMan/tutorial_250.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/userMan/tutorial_250.png"
         }
       },
       "version": ""

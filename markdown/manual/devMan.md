@@ -4,7 +4,7 @@
 
 本書では、SAR衛星解析による洪水被害の推定システム（以下「本システム」という。）の利用環境構築手順について記載しています。本システムの構成や仕様の詳細については以下も参考にしてください。
 
-[技術検証レポート](https://www.mlit.go.jp/XXXX)
+[技術検証レポート](https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0071_ver01.pdf)
 
 # 2 動作環境
 
